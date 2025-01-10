@@ -1,0 +1,187 @@
+/* تنسيق عام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق الهيدر */
+header {
+    background-color: #4c90afc4;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+/* تنسيق قائمة التنقل */
+nav ul {
+    list-style-type: none; /* إزالة النقاط من القائمة */
+    padding: 0;
+    margin: 0;
+    display: flex; /* عرض الروابط في خط أفقي */
+    gap: 20px; /* مسافة بين الروابط */
+}
+
+nav ul li {
+    display: inline; /* عرض عناصر القائمة بشكل أفقي */
+}
+
+nav ul li a {
+    text-decoration: none; /* إزالة التسطير من الروابط */
+    color: #007BFF; /* لون الرابط */
+    font-size: 18px; /* حجم الخط */
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* تغيير لون الرابط عند التمرير */
+    text-decoration: underline; /* إضافة تسطير عند التمرير */
+}
+
+/* تنسيق الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ألوان العناوين */
+th {
+    background-color: #588bbbc5;
+    color: white;
+}
+
+/* ألوان الصفوف */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* تنسيق صف التفاصيل */
+.details {
+    display: none; /* إخفاء التفاصيل بشكل افتراضي */
+    background-color: #f9f9f9; /* خلفية خفيفة */
+    text-align: right; /* محاذاة النص لليمين */
+    padding: 10px;
+    border: 1px solid #ddd; /* حواف خفيفة */
+}
+/* تنسيق الصور بشكل عام */
+.book-image {
+    max-width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    border-radius: 5px; /* زوايا دائرية */
+}
+
+/* تنسيق الصور حسب المحاذاة */
+.align-right {
+    float: right; /* يجعل الصورة على اليمين */
+    margin-left: 10px; /* إضافة مسافة على اليسار */
+}
+
+.align-left {
+    float: left; /* يجعل الصورة على اليسار */
+    margin-right: 10px; /* إضافة مسافة على اليمين */
+}
+
+.align-center {
+    display: block; /* يجعل الصورة في كتلة مستقلة */
+    margin: 0 auto; /* يضع الصورة في المنتصف */
+}
+
+/* الحاوية العامة للصور */
+.image-container {
+    display: flex; /* ترتيب الصور بجانب بعضها */
+    justify-content: space-between; /* توزيع المسافات بين الصور */
+    gap: 20px; /* المسافة بين الصور */
+    margin: 20px auto; /* مسافة حول الحاوية */
+    max-width: 800px; /* عرض الحاوية بالكامل */
+}
+
+/* عنصر الصورة والنص */
+.image-item {
+    text-align: center; /* محاذاة النص أسفل الصورة */
+    flex: 1; /* توزيع المساحة بالتساوي */
+}
+
+.image-item img {
+    width: 100%; /* ملاءمة الصورة للعنصر */
+    max-width: 250px; /* الحد الأقصى لعرض الصورة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border: 1px solid #ddd; /* إطار خفيف */
+    border-radius: 5px; /* زوايا مستديرة للصورة */
+}
+
+.image-item figcaption {
+    margin-top: 10px; /* مسافة بين الصورة والنص */
+    font-size: 14px; /* حجم النص */
+    font-weight: bold; /* جعل النص غامقًا */
+    color: #333; /* لون النص */
+}
+
+
+
+
+
+/* الأزرار */
+button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
+
+/* تنسيق النموذج */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #2196F3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}

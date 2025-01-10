@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكتب</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>                
+
+
+
+    <header>
+        <h1>الكتب</h1>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">الصفحة الرئيسية</a></li>
+            <li><a href="AboutUs.html">من نحن</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ISBN</th>
+                    <th>العنوان</th>
+                    <th>السعر</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- الكتاب الأول -->
+                <tr>
+                    <td>978-1234567890</td>
+                    <td>الف ليلة و ليلة</td>
+                    <td>ل.س 25000</td>
+                    <td>
+                        <input type="checkbox" onclick="toggleDetailsWithImage(this, 'details1')">
+                    </td>
+                    <td><input type="radio" name="book" value="كتاب 1 = الف ليلة و ليلة ٍ"></td>
+                </tr>
+                <tr id="details1" class="details">
+                    <td colspan="5"  >
+                        <p   style="direction: rtl; text-align: right;">  
+                              الناشر: دار المعارف <br>
+
+
+                            تصنيف الكتاب: قصص شعبية <br>
+
+                            ملخص: كتاب أسطوري يضم مجموعة من القصص الشعبية من الشرق األوسط وجنوب آسيا وشمال إفريقيا، <br>
+
+                            تم جمعها خالل العصر الذهبي للإسلام, يتم سرد القصص ضمن إطار قصة مركزية تتضمن الشخصية <br>
+
+                            الرئيسية شهرزاد; التي تحكي حكايات للملك شهريار لتأجيل إعدامه <br>
+
+                            أهم ثلاث قصص: <br>
+
+                            
+                            .</p>
+
+                            <figure class="align-right">
+                                <img src="book1.jpg"  alt="صورة كتاب 1" height="200px" width="200px" class="align-right">
+                                <figcaption> شهرزاد و شهريار </figcaption>
+                            </figure>
+                        
+
+                            <figure class="align-right">
+                                <img src="book2.JFIF" alt="صورة كتاب 1" height="200px"  width="200" class="align-center"  >
+                                <figcaption> مصباح علاء الدين </figcaption>
+                            </figure>
+
+
+                            <figure class="align-right">
+                                <img src="book3.jpg"  alt="صورة كتاب 1" height="200px" width="200px" class="align-right">
+                                <figcaption> علي بابا  الأربعون  لصاً </figcaption>
+                            </figure>
+                        
+                            
+
+
+
+                    
+                    </td>
+                </tr>
+
+                <!-- الكتاب الثاني -->
+                <tr>
+                    <td>978-0987653331</td>
+                    <td> مميز بالأصفر  </td>
+                    <td>ل.س 30000</td>
+                    <td>
+                        <input type="checkbox" onclick="toggleDetailsWithImage(this, 'details2')">
+                    </td>
+                    <td><input type="radio" name="book" value="كتاب 2 = مميز بالأصفر "></td>
+                </tr>
+                <tr id="details2" class="details">
+                    <td colspan="5">
+                        <p style="direction: rtl; text-align: right;"> 
+                        <br>الناشر : مكتبة جرير
+                         
+                        <br>هذا الكتاب عبارة عن مجموعة من القصص والاقتباسات حول بعض أغلى موضوعات الحياة،
+                         مثل: أهمية التصرف بلطف وكرم وإحسان مع الآخرين، <br>
+                         
+                         وتوطيد علاقات قوية راسخة مع الأشخاص الذين تحبهم، واختيار توجهات ذهنية تساعدنا أثناء عيش ساعات الحياة اليومية العادية، 
+
+                        <br>واكتشاف معنى الرضا والإشباع النابعين من تقدير المتع البسيطة والاستمتاع بها.
+
+                        </p>
+                        <figure class="align-right">
+                            <img src="book4.jpg" height="200px" width="200px" alt="صورة كتاب 2" class="align-center">
+                            <figcaption> مميز بالأصفر</figcaption>
+                        </figure>
+
+
+
+
+                    </td>
+                </tr>
+
+                
+                <!-- الكتاب الثالث -->
+                <tr>
+                    <td>978-098763652</td>
+                    <td> نظرية الفستق </td>
+                    <td>ل.س 35000</td>
+                    <td>
+                        <input type="checkbox" onclick="toggleDetailsWithImage(this, 'details3')">
+                    </td>
+                    <td><input type="radio" name="book" value="كتاب 3= نظرية الفستق "></td>
+                </tr>
+                <tr id="details3" class="details">
+                    <td colspan="5">
+                        <p  style="direction: rtl; text-align: right;"    >
+                            الناشر: دار الحضارة للنشر والتوزيع <br>
+                            المؤالف: فهد عامر الأحمدي <br>
+                            الملخص : <br>
+                            كتاب سيغير طريقة تفكيرك وحكمك على الأشياء. <br>
+                             يحتوي على مجموعة مقالات تتمحور غالبا عن تطوير الذات والبرمجة اللغوية العصبية وطرق التفكير والوعي والسلوك الإنساني. <br>
+                             الكتاب يتضمن 65 موضوعا. كل منها تختوي على 5 صفحات <br>
+                             وهو خاص بطرق التفكير والسلوك والحكم على الأشياء. كتاب تنمية ذاتيه بحت. <br>
+                            .</p>
+                        <figure class="align-right">
+                            <img src="book5.jpg" height="200px" width="200px" alt="صورة كتاب 3" class="align-center">
+                            <figcaption>  نظرية الفستق </figcaption>
+                        </figure>
+
+                    </td>
+                </tr>
+
+
+
+                
+                <!-- الكتاب الرابع -->
+                <tr>
+                    <td>978-0989562321</td>
+                    <td> السلام عليك يا صاحبي</td>
+                    <td>ل.س 30000</td>
+                    <td>
+                        <input type="checkbox" onclick="toggleDetailsWithImage(this, 'details4')">
+                    </td>
+                    <td><input type="radio" name="book" value="كتاب 4 = السلام عليك يا صاحبي "></td>
+                </tr>
+                <tr id="details4" class="details">
+                    <td colspan="5">
+                        <p  style="direction: rtl; text-align: right;"    >
+                            الناشر: دار كلمات للنشر والتوزيع <br>
+                           نبذه المؤالف: <br>
+                           يا صاحبي، ليس كل من واساكَ خالياً من الحُزن، لعلَّه عرف معنى أن يحزن المرءُ ولا يجد أحداً يواسيه! <br>
+                            ولا كل من أعطاكَ ثريٌّ، لعلَّه عرفَ جيداً معنى أن يحتاجَ المرءُ ولا يجد! <br>
+                            ولا كُل من ربتَ على كتفكَ ليس له هَمٌّ، لعله أراد أن يدعو بطريقةٍ أخرى، فيقول صامتاً وهو يُطبطبُ عليكَ: <br>
+                             ها أنا أربتُ على أكتاف الناس فاربِتْ على كتفي يا الله! <br>
+                            .</p>
+                    
+
+                        <figure class="align-right">
+                            <img src="book6.jpg" height="200px" width="200px" alt="صورة كتاب 4" class="align-center">
+                            <figcaption> السلام عليك يا صاحبي،  </figcaption>
+                        </figure>
+
+                    </td>
+                </tr>
+
+                
+                <!-- الكتاب الخامس -->
+                <tr>
+                    <td>978-0989562321</td>
+                    <td> صاحب الظل الطويل</td>
+                    <td>ل.س 40000</td>
+                    <td>
+                        <input type="checkbox" onclick="toggleDetailsWithImage(this, 'details5')">
+                    </td>
+                    <td><input type="radio" name="book" value="كتاب 5 = صاحب الظل الطويل "></td>
+                </tr>
+                <tr id="details5" class="details">
+                    <td colspan="5">
+                        <p  style="direction: rtl; text-align: right;"    >
+                            الناشر: دار كلمات للنشر والتوزيع <br>
+                            المؤلف : جين ويبستر
+                           نبذه المؤالف: <br>
+                           تدور أحداث المسلسل حول فتاة يتيمة اسمها جودي أبوت، حصلت على منحة للدراسة في مدرسة لينكولن الثانوية من قبل شخص لا تعرفه اسمه المستعار هو جون سميث كانت تلقبه جودي بـ«صاحب الظل الطويل» كونها لم يسبق لها أن رأت سوى ظله. المقابل الوحيد الذي اشترطه سميث على جودي مقابل المنحة هو أن تقوم بمراسلته مرة واحدة كل شهر، بدون أن تتوقع ردا منه على رسائلها بالضرورة.
+
+المسلسل يروي تفاصيل ثلاث سنوات من حياة جودي، ابتداء من مغادرتها لدار الأيتام وحتى تخرجها من المدرسة الثانوية
+                            .</p>
+                    
+
+                        <figure class="align-right">
+                            <img src="book7.jpg" height="200px" width="200px" alt="صورة كتاب 5" class="align-center">
+                            <figcaption> السلام عليك يا صاحبي،  </figcaption>
+                        </figure>
+
+                    </td>
+                </tr>
+
+
+                
+                <!-- الكتاب السادس -->
+                <tr>
+                    <td>978-0989562771</td>
+                    <td> ارض زيكولا</td>
+                    <td>ل.س 40000</td>
+                    <td>
+                        <input type="checkbox" onclick="toggleDetailsWithImage(this, 'details6')">
+                    </td>
+                    <td><input type="radio" name="book" value="كتاب 6 = ارض زيكولا"></td>
+                </tr>
+                <tr id="details6" class="details">
+                    <td colspan="5">
+                        <p  style="direction: rtl; text-align: right;"    >
+                            الناشر: دار كلمات للنشر والتوزيع <br>
+
+                            المؤلف : عمر عبد الحميد <br>
+                           نبذه المؤالف: <br>
+                           شخصية رئيسية تُدعى "خالد"، وهو شاب يعيش في زيكولا.
+                            في هذا العالم، يُجبر السكان على المشاركة في مباريات خطيرة تسمى "المباريات السنوية"، والتي يتعين على الخاسر فيها أن يُقتل. 
+                            هذا النظام يعتمد على فكرة أن الأشخاص الأغنياء يمكنهم شراء وحدات الذكاء والبقاء على قيد الحياة.
+                        
+                        
+                        
+                        
+                        </p>
+                    
+
+                        <figure class="align-right">
+                            <img src="book8.jpg" height="200px" width="200px" alt="صورة كتاب 8" class="align-center">
+                            <figcaption> ارض زيكولا  </figcaption>
+                        </figure>
+
+                    </td>
+                </tr>
+
+
+
+
+
+            </tbody>
+        </table>
+        <button onclick="showForm()">متابعة</button>
+        <form id="orderForm" style="display:none;" onsubmit="submitOrder(event)">
+            <label>الاسم الكامل:</label>
+            <input type="text" id="fullName" placeholder="أدخل الاسم الكامل" oninput="validateArabicName(this)" >
+            <label>الرقم الوطني:</label>
+            <input type="text" id="nationalID" placeholder="xxxxxxxxxxx" oninput="validateNationalID(this)" required>
+            <label>تاريخ الولادة:</label>
+            <input type="text" id="dateField" placeholder="dd_mm_yyyy" oninput="validateDateFormat(this)" >
+            <label>رقم الموبايل:</label>
+            <input type="text" id="mobile" placeholder="09XXXXXXXX" oninput="validateMobileNumber(this)" >
+            <label>الإيميل:</label>
+            <input type="email" id="email" placeholder="example@domain.com" oninput="validateEmail(this)" >
+            <button type="submit">إرسال</button>
+        </form>
+    </main>
+</body>
+</html>
